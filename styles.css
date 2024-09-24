@@ -98,6 +98,11 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.header-nav ul li a.active {
+    color: #000000;
+    font-weight: bold;
+}
+
 .header-nav ul li a:hover {
     background-color: #3498db;
     color: #ecf0f1;
