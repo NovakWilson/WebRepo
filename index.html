@@ -6,70 +6,103 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="images/alno.jpg" alt="Логотип сайта" width="150" height="150">
+    <header class="header-top">
+        <img src="images/alno.jpg" alt="Лого" width="50" height="50">
         <h1>Блог команды по Pubg</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О команде</a></li>
-                <li><a href="#achivements">Достижения</a></li>
-                <li><a href="#info">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Информация</h2>
-            <p>Приветствуем всех любителей PUBG'а </p>
-        </section>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О команде</a></li>
+            <li><a href="#achievements">Достижения</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
 
-        <section id="about">
-            <h2>Наша команда</h2>
-            <p>Мы - <strong>Albus Noctes</strong> <em>aka</em> белые ночи. Вот они слева направо</p>
-            <img src="images/lobby2.jpg" alt="лобаш" width="708" height="400">
-        </section>
+    <main class="container">
+        <div class="content">
+            <section id="home">
+                <h2>Информация</h2>
+                <p>Приветствуем всех любителей PUBG'а </p>
+            </section>
 
-        <section id="achivements">
-            <h2>Достижения</h2>
-            <ul>
-                <li>Pcs 2 закрытые квалы</li>
-                <li>Фейсит лига виннеры</li>
-                <li>Топ-1</li>
-            </ul>
-        </section>
+            <section class="grid-gallery" id="about">
+                <h2>Наша команда</h2>
+                <p>Мы - <strong>Albus Noctes</strong> <em>aka</em> белые ночи. Вот они слева направо</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="images/lobby2.jpg" alt="Image 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/pcs.jpg" alt="Image 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/team.jpg" alt="Image 3">
+                    </div>
+                </div>
+            </section>
 
-        <section id="ascii-art">
-            <h2>Наш талисман</h2>
-            <pre>
-ЗАПУСКАЕМ
-░ГУСЯ░▄▀▀▀▄░РАБОТЯГИ░░
-▄███▀░◐░░░▌░░░░░░░
-░░░░▌░░░░░▐░░░░░░░
-░░░░▐░░░░░▐░░░░░░░
-░░░░▌░░░░░▐▄▄░░░░░
-░░░░▌░░░░▄▀▒▒▀▀▀▀▄
-░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
-░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
-░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
-░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
-░░░░░░░░░░░▌▌░▌▌░░░░░
-░░░░░░░░░░░▌▌░▌▌░░░░░
-░░░░░░░░░▄▄▌▌▄▌▌░░░░░
-            </pre>
-        </section>
+            <section class="table-section" id="achievements">
+                <h2>Достижения</h2>
+                <div class="table-container">
+                    <div class="table-row">
+                        <div class="table-header">Год</div>
+                        <div class="table-header">Турнир</div>
+                        <div class="table-header">Результат</div>
+                    </div>
 
-        <section id="code-snippet">
-            <h2>Как регает дамаг по врагам:</h2>
-            <pre class="article__code">
-if hit():
-    health -= 0
-print("Better luck next time!")
-            </pre>
-        </section>
+                    <div class="table-row">
+                        <div class="table-cell">2021</div>
+                        <div class="table-cell">Minor GLL</div>
+                        <div class="table-cell">Prize places</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">2020</div>
+                        <div class="table-cell">PCS 2</div>
+                        <div class="table-cell">Closed qualification</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">2019</div>
+                        <div class="table-cell">PCS</div>
+                        <div class="table-cell">3th round</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ascii-art">
+                <h2>Наш талисман</h2>
+                <pre>
+    ЗАПУСКАЕМ
+    ░ГУСЯ░▄▀▀▀▄░РАБОТЯГИ░░
+    ▄███▀░◐░░░▌░░░░░░░
+    ░░░░▌░░░░░▐░░░░░░░
+    ░░░░▐░░░░░▐░░░░░░░
+    ░░░░▌░░░░░▐▄▄░░░░░
+    ░░░░▌░░░░▄▀▒▒▀▀▀▀▄
+    ░░░▐░░░░▐▒▒▒▒▒▒▒▒▀▀▄
+    ░░░▐░░░░▐▄▒▒▒▒▒▒▒▒▒▒▀▄
+    ░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
+    ░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
+    ░░░░░░░░░░░▌▌░▌▌░░░░░
+    ░░░░░░░░░░░▌▌░▌▌░░░░░
+    ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
+                </pre>
+            </section>
+
+            <section id="code-snippet">
+                <h2>Как регает дамаг по врагам:</h2>
+                <pre class="article__code">
+    if hit():
+        health -= 0
+    print("Better luck next time!")
+                </pre>
+            </section>
+        </div>
     </main>
-    <section id="info">
+    <section id="contacts">
         <aside>
             <h2>Info</h2>
             <p><em>"Не меня с вами заперли, это вас заперли со мной"</em></p>
