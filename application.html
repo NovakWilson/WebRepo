@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/application.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/users.js" defer></script>
 </head>
 <body>
     <header>
@@ -42,6 +43,16 @@
             <h2>Заявки:</h2>
             <ul id="applications">
             </ul>
+        </div>
+
+        <div id="users-section" class="result-wrapper" style="position: relative;">
+            <h2>Список пользователей</h2>
+            <div id="preloader" class="preloader">
+                <div class="spinner"></div>
+                Загрузка...
+            </div>
+            <ul id="users-list"></ul>
+            <div id="error-message" class="error-message" style="display: none;">⚠ Что-то пошло не так</div>
         </div>
     </main>
 
