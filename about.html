@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О команде</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/swiper.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/alno.jpg" type="image/jpg">
 </head>
 <body>
     <header>
@@ -22,19 +26,18 @@
 
     <main>
         <section class="grid-gallery" id="about">
-            <h2>Наша команда</h2>
-            <p>Мы - <strong>Albus Noctes</strong> <em>aka</em> белые ночи. Вот они слева направо</p>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <img src="images/lobby2.jpg" alt="Image 1">
-                </div>
-                <div class="grid-item">
-                    <img src="images/pcs.jpg" alt="Image 2">
-                </div>
-                <div class="grid-item">
-                    <img src="images/team.jpg" alt="Image 3">
-                </div>
+          <h2>Наша команда</h2>
+          <p>Мы - <strong>Albus Noctes</strong> <em>aka</em> белые ночи. Вот они слева направо</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/lobby2.jpg" alt="Image 1"></div>
+              <div class="swiper-slide"><img src="images/pcs.jpg" alt="Image 2"></div>
+              <div class="swiper-slide"><img src="images/team.jpg" alt="Image 3"></div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </section>
     </main>
 

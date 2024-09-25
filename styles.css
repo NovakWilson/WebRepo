@@ -378,3 +378,41 @@ button:hover {
     position: relative;
     min-height: 200px;
 }
+
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.swiper-slide {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 550px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2980b9;
+}
